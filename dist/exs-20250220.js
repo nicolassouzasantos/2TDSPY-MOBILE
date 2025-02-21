@@ -68,3 +68,13 @@ console.log("Resposta exercício 5:");
 processarResposta("Dados salvos com sucesso!");
 processarResposta(true);
 processarResposta(false);
+// Criando um objeto que representa um estudante que também trabalha
+const estudanteTrabalhador = {
+    nome: "Carlos Silva",
+    curso: "Engenharia de Software",
+    empresa: "Tech Solutions",
+    cargo: "Desenvolvedor Júnior",
+};
+console.log("\n");
+console.log("Resposta exercício 6:");
+console.log(estudanteTrabalhador);

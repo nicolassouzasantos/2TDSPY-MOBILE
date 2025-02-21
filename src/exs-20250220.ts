@@ -115,3 +115,34 @@ console.log("Resposta exercício 5:");
 processarResposta("Dados salvos com sucesso!");
 processarResposta(true);
 processarResposta(false);
+
+// Exercício 6
+// Utilizando Intersection Types, crie um tipo EstudanteTrabalhador, que una as propriedades de um 
+// Estudante (nome e curso) e de um Trabalhador (empresa e cargo).
+// Depois, crie um objeto que represente um estudante que também trabalha e exiba os dados no console.
+
+// Definição dos tipos
+type Estudante = {
+  nome: string;
+  curso: string;
+};
+
+type Trabalhador = {
+  empresa: string;
+  cargo: string;
+};
+
+// Criando o tipo EstudanteTrabalhador através da interseção dos tipos
+type EstudanteTrabalhador = Estudante & Trabalhador;
+
+// Criando um objeto que representa um estudante que também trabalha
+const estudanteTrabalhador: EstudanteTrabalhador = {
+  nome: "Carlos Silva",
+  curso: "Engenharia de Software",
+  empresa: "Tech Solutions",
+  cargo: "Desenvolvedor Júnior",
+};
+
+console.log("\n");
+console.log("Resposta exercício 6:");
+console.log(estudanteTrabalhador);
